@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Form</title>
+  </head>
+  <body>
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <div class="logo">
+              <a href="/"><span>.web</span>design</a>
+            </div>
+          </div>
+          <ul class="progress-steps">
+            <li class="step active">
+              <span>1</span>
+              <p>Personal <br /><span>30 sec to complete</span></p>
+            </li>
+            <li class="step">
+              <span>2</span>
+              <p>Contact <br /><span>60 sec to complete</span></p>
+            </li>
+            <li class="step">
+              <span>3</span>
+              <p>Security <br /><span>30 sec to complete</span></p>
+            </li>
+          </ul>
+          <form action="">
+            <div class="form-one form-step">
+              <div class="bg-svg"></div>
+              <h2>Personal Information</h2>
+              <p>Enter your personal information correctly</p>
+              <div>
+                <label>First Name </label
+                ><input type="text" placeholder="e.g. Saad" />
+              </div>
+              <div>
+                <label>Last Name </label
+                ><input type="text" placeholder="e.g. Saad" />
+              </div>
+              <div class="birth">
+                <label>Date of Birth</label>
+                <div class="grouping">
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="day"
+                    value=""
+                    min="0"
+                    max="31"
+                  />
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="month"
+                    value=""
+                    min="0"
+                    max="12"
+                  />
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="day"
+                    value=""
+                    min="0"
+                    max="2050"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2>Contact</h2>
+              <div>
+                <label>Phone</label>
+                <input type="tel" placeholder="+92xxxxxxxxxx" />
+              </div>
+              <div>
+                <label>Address</label>
+                <input type="text" placeholder="Street Address" />
+              </div>
+              <div>
+                <input type="text" placeholder="Street No:20 Layyah Road" />
+              </div>
+              <div>
+                <label>City</label>
+                <input type="text" placeholder="City Name" />
+              </div>
+              <div>
+                <label>State</label>
+                <input type="text" placeholder="State/province" />
+              </div>
+              <div>
+                <label>Zip Code</label>
+                <input type="text" placeholder="Postal/Zip Code" />
+              </div>
+              <div>
+                <label>Country</label>
+                <select name="country" id="country">
+                  <option value="">Please select</option>
+                  <option value="afghanistan">Afghanistan</option>
+                  <option value="albania">Albania</option>
+                  <option value="algeria">Algeria</option>
+                  <option value="andorra">Andorra</option>
+                  <option value="angola">Angola</option>
+                  <option value="antigua-and-barbuda">
+                    Antigua and Barbuda
+                  </option>
+                  <option value="argentina">Argentina</option>
+                  <option value="armenia">Armenia</option>
+                  <option value="australia">Australia</option>
+                  <option value="austria">Austria</option>
+                  <option value="azerbaijan">Azerbaijan</option>
+                  <option value="bahamas">Bahamas</option>
+                  <option value="bahrain">Bahrain</option>
+                  <option value="bangladesh">Bangladesh</option>
+                  <option value="barbados">Barbados</option>
+                  <option value="belarus">Belarus</option>
+                  <option value="belgium">Belgium</option>
+                  <option value="belize">Belize</option>
+                  <option value="benin">Benin</option>
+                  <option value="bhutan">Bhutan</option>
+                  <option value="bolivia">Bolivia</option>
+                  <option value="bosnia-and-herzegovina">
+                    Bosnia and Herzegovina
+                  </option>
+                  <option value="botswana">Botswana</option>
+                  <option value="brazil">Brazil</option>
+                  <option value="brunei">Brunei</option>
+                  <option value="bulgaria">Bulgaria</option>
+                  <option value="burkina-faso">Burkina Faso</option>
+                  <option value="burundi">Burundi</option>
+                  <option value="cabo-verde">Cabo Verde</option>
+                  <option value="cambodia">Cambodia</option>
+                  <option value="cameroon">Cameroon</option>
+                  <option value="canada">Canada</option>
+                  <option value="central-african-republic">
+                    Central African Republic
+                  </option>
+                  <option value="chad">Chad</option>
+                  <option value="chile">Chile</option>
+                  <option value="china">China</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="comoros">Comoros</option>
+                  <option value="congo">Congo</option>
+                  <option value="costa-rica">Costa Rica</option>
+                  <option value="croatia">Croatia</option>
+                  <option value="cuba">Cuba</option>
+                  <option value="cyprus">Cyprus</option>
+                  <option value="czech-republic">Czech Republic</option>
+                  <option value="denmark">Denmark</option>
+                  <option value="djibouti">Djibouti</option>
+                  <option value="dominica">Dominica</option>
+                  <option value="dominican-republic">Dominican Republic</option>
+                  <option value="east-timor">East Timor</option>
+                  <option value="ecuador">Ecuador</option>
+                  <option value="egypt">Egypt</option>
+                  <option value="el-salvador">El Salvador</option>
+                  <option value="equatorial-guinea">Equatorial Guinea</option>
+                </select>
+              </div>
+              <div class="form-three form-step">
+                <div class="bg-svg"></div>
+                <h2>Security</h2>
+                <div>
+                  <label>Email</label>
+                  <input type="email" placeholder="xyz@gmail.com" />
+                </div>
+                <div>
+                  <label>Username</label>
+                  <input type="text" placeholder="Username" />
+                </div>
+                <div>
+                  <label>Password</label>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div>
+                  <input type="password" placeholder="Confirm Password" />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" />
+                  <label>Receive our News letter</label>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn-prev" disabled>Back</button>
+              <button type="button" class="btn-prev">Next Step</button>
+              <button type="button" class="btn-prev">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
