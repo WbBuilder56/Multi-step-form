@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Multi-Step Form</title>
   </head>
   <body>
@@ -11,23 +12,23 @@
         <div class="form-box">
           <div class="progress">
             <div class="logo">
-              <a href="/"><span>.web</span>design</a>
+              <a href="/"><span>Wb</span>Builder56</a>
             </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p>Personal <br /><span>30 sec to complete</span></p>
+              </li>
+              <li class="step">
+                <span>2</span>
+                <p>Contact <br /><span>60 sec to complete</span></p>
+              </li>
+              <li class="step">
+                <span>3</span>
+                <p>Security <br /><span>30 sec to complete</span></p>
+              </li>
+            </ul>
           </div>
-          <ul class="progress-steps">
-            <li class="step active">
-              <span>1</span>
-              <p>Personal <br /><span>30 sec to complete</span></p>
-            </li>
-            <li class="step">
-              <span>2</span>
-              <p>Contact <br /><span>60 sec to complete</span></p>
-            </li>
-            <li class="step">
-              <span>3</span>
-              <p>Security <br /><span>30 sec to complete</span></p>
-            </li>
-          </ul>
           <form action="">
             <div class="form-one form-step">
               <div class="bg-svg"></div>
@@ -39,7 +40,7 @@
               </div>
               <div>
                 <label>Last Name </label
-                ><input type="text" placeholder="e.g. Saad" />
+                ><input type="text" placeholder="e.g. Anwar" />
               </div>
               <div class="birth">
                 <label>Date of Birth</label>
@@ -51,6 +52,7 @@
                     value=""
                     min="0"
                     max="31"
+                    placeholder="DD"
                   />
                   <input
                     type="text"
@@ -59,6 +61,7 @@
                     value=""
                     min="0"
                     max="12"
+                    placeholder="MM"
                   />
                   <input
                     type="text"
@@ -67,6 +70,7 @@
                     value=""
                     min="0"
                     max="2050"
+                    placeholder="YYYY"
                   />
                 </div>
               </div>
@@ -160,8 +164,10 @@
                   <option value="egypt">Egypt</option>
                   <option value="el-salvador">El Salvador</option>
                   <option value="equatorial-guinea">Equatorial Guinea</option>
+                  <option value="pakistan">Pakistan</option>
                 </select>
               </div>
+            </div>
               <div class="form-three form-step">
                 <div class="bg-svg"></div>
                 <h2>Security</h2>
@@ -185,11 +191,10 @@
                   <label>Receive our News letter</label>
                 </div>
               </div>
-            </div>
             <div class="btn-group">
               <button type="button" class="btn-prev" disabled>Back</button>
-              <button type="button" class="btn-prev">Next Step</button>
-              <button type="button" class="btn-prev">Submit</button>
+              <button type="button" class="btn-next">Next Step</button>
+              <button type="button" class="btn-submit">Submit</button>
             </div>
           </form>
         </div>
