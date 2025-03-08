@@ -12,7 +12,7 @@
         <div class="form-box">
           <div class="progress">
             <div class="logo">
-              <a href="/"><span>Wb</span>Builder56</a>
+              <a href="https://github.com/WbBuilder56"><span>Wb</span>Builder56</a>
             </div>
             <ul class="progress-steps">
               <li class="step active">
@@ -30,17 +30,17 @@
             </ul>
           </div>
           <form action="">
-            <div class="form-one form-step">
+            <div class="form-one form-step active">
               <div class="bg-svg"></div>
               <h2>Personal Information</h2>
               <p>Enter your personal information correctly</p>
               <div>
                 <label>First Name </label
-                ><input type="text" placeholder="e.g. Saad" />
+                ><input type="text" name="name" placeholder="Your Name" required/>
               </div>
               <div>
                 <label>Last Name </label
-                ><input type="text" placeholder="e.g. Anwar" />
+                ><input type="text" name="father-name" placeholder="Father's Name" required/>
               </div>
               <div class="birth">
                 <label>Date of Birth</label>
@@ -53,6 +53,7 @@
                     min="0"
                     max="31"
                     placeholder="DD"
+                    required
                   />
                   <input
                     type="text"
@@ -62,6 +63,7 @@
                     min="0"
                     max="12"
                     placeholder="MM"
+                    required
                   />
                   <input
                     type="text"
@@ -71,6 +73,7 @@
                     min="0"
                     max="2050"
                     placeholder="YYYY"
+                    required
                   />
                 </div>
               </div>
@@ -80,30 +83,27 @@
               <h2>Contact</h2>
               <div>
                 <label>Phone</label>
-                <input type="tel" placeholder="+92xxxxxxxxxx" />
+                <input type="tel" name="Phone" placeholder="+92xxxxxxxxxx" required/>
               </div>
               <div>
                 <label>Address</label>
-                <input type="text" placeholder="Street Address" />
-              </div>
-              <div>
-                <input type="text" placeholder="Street No:20 Layyah Road" />
+                <input type="text" name="Address" placeholder="Colony/Sector No:" required/>
               </div>
               <div>
                 <label>City</label>
-                <input type="text" placeholder="City Name" />
+                <input type="text" name="city" placeholder="City Name" required/>
               </div>
               <div>
                 <label>State</label>
-                <input type="text" placeholder="State/province" />
+                <input type="text" name="province" placeholder="State/province" required/>
               </div>
               <div>
                 <label>Zip Code</label>
-                <input type="text" placeholder="Postal/Zip Code" />
+                <input type="text" name="Zipcode" placeholder="Postal/Zip Code" required/>
               </div>
               <div>
                 <label>Country</label>
-                <select name="country" id="country">
+                <select name="country" id="country" required>
                   <option value="">Please select</option>
                   <option value="afghanistan">Afghanistan</option>
                   <option value="albania">Albania</option>
@@ -173,22 +173,22 @@
                 <h2>Security</h2>
                 <div>
                   <label>Email</label>
-                  <input type="email" placeholder="xyz@gmail.com" />
+                  <input type="email" name="email" placeholder="xyz@gmail.com" required/>
                 </div>
                 <div>
                   <label>Username</label>
-                  <input type="text" placeholder="Username" />
+                  <input type="text" name="Username" placeholder="Username" required/>
                 </div>
                 <div>
                   <label>Password</label>
-                  <input type="password" placeholder="Password" />
+                  <input type="password" name="password" placeholder="Password" required/>
                 </div>
                 <div>
-                  <input type="password" placeholder="Confirm Password" />
+                  <input type="password" name="password" placeholder="Confirm Password" required/>
                 </div>
                 <div class="checkbox">
-                  <input type="checkbox" />
-                  <label>Receive our News letter</label>
+                  <input type="checkbox" name="checkbox" />
+                  <label>Receive our Newsletter</label>
                 </div>
               </div>
             <div class="btn-group">
